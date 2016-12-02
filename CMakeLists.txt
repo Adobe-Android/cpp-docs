@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.6.2)
-project(project name here)
+project(project_name_here)
 
 #Bring the headers, such as .h or .hpp into the project
 include_directories(include)
