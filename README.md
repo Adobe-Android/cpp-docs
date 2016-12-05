@@ -1,5 +1,5 @@
 # Cpp_Docs
 
 ### Overview:
-An MIT licensed project where I share various helpful files I like to keep around with anyone who stumbles upon them.
+An MIT licensed project where I share various helpful C++ related files.
 * Meson.build stuff on the way!
