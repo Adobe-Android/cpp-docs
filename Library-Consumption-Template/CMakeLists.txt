@@ -1,0 +1,27 @@
+cmake_minimum_required(VERSION 3.5)
+project(project_name LANGUAGES CXX)
+
+set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_CXX_EXTENSIONS OFF)
+
+find_package(fmt REQUIRED)
+
+add_executable(project-test
+    main.cpp
+)
+
+target_link_libraries(project-test PRIVATE fmt::fmt)
+
+if ( CMAKE_CXX_COMPILER_ID MATCHES "Clang|AppleClang|GNU" )
+    target_compile_options( project-test PRIVATE -Wall -Wextra -Wunreachable-code -Wpedantic)
+endif()
+if ( CMAKE_CXX_COMPILER_ID MATCHES "Clang" )
+    target_compile_options( project-test PRIVATE -Wweak-vtables -Wexit-time-destructors -Wglobal-constructors -Wmissing-noreturn )
+endif()
+if ( CMAKE_CXX_COMPILER_ID MATCHES "MSVC" )
+    target_compile_options( project-test PRIVATE /W4 /w44265 /w44061 /w44062 )
+endif()
+
+include(CTest)
+add_test(NAME plain-run COMMAND $<TARGET_FILE:project-test>)
