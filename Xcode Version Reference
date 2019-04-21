@@ -1,3 +1,5 @@
+C11 and C++14 supported:
+
 Xcode 9.2 - Apple Clang 900.0.39.2 (based on Clang 4 series) - minimum macOS: 10.12.6
 Xcode 9.4.1 - Apple Clang 902.0.39.2 (based on Clang 5 series) - minimum macOS: 10.13.2
 Xcode 10.1 - Apple Clang  1000.11.45.5 (based on Clang 6 series) - minimum macOS: 10.13.6
