@@ -1,4 +1,4 @@
-## C++ Fundamental Types Reference
+# C++ Fundamental Types Reference
 ### Size measured in bytes
 
 | Type               | 32-bit Windows | 32-bit Linux/macOS/BSD | 64-bit Windows | 64-bit Linux/macOS/BSD | Printf Format Specifier |
