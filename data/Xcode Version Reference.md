@@ -1,6 +1,6 @@
 # Xcode Version Reference
 
-| Xcode Version | Apple Clang Version                    | Minimum macOS supported |
+| Xcode Version | Apple Clang Version                    | Minimum macOS Supported |
 | ------------- | -------------------------------------- | ----------------------- |
 | 6.2           | 600.0.57 (based on Clang 3.5 series)   | 10.9.4                  |
 | 6.4           | 602.0.53 (based on Clang 3.6 series)   | 10.10                   |
