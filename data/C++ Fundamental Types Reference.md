@@ -18,5 +18,5 @@
 | char*              |       1        |           1            |       1        |           1            |                      %s |
 | wchar_t            |       2        |           2            |       2        |           4            |                     %lc |
 | wchar_t*           |       2        |           2            |       2        |           4            |                     %ls |
-| size_t             |       4        |           4            |       8        |           8            |                     %zd |
-| ptr*               |       4        |           4            |       8        |           8            |                      %p |
+| size_t (unsigned)  |       4        |           4            |       8        |           8            |                     %zu |
+| void*              |       4        |           4            |       8        |           8            |                      %p |
