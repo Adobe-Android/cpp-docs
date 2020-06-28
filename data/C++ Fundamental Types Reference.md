@@ -15,7 +15,8 @@
 | double             |       8        |           8            |       8        |           8            |                     %lg |
 | long double        |       8        |           8            |       8        |           16           |                     %Lg |
 | char               |       1        |           1            |       1        |           1            |                      %c |
-| wchar_t            |       2        |           2            |       2        |           2            |                     %lc |
 | char*              |       1        |           1            |       1        |           1            |                      %s |
+| wchar_t            |       2        |           2            |       2        |           4            |                     %lc |
+| wchar_t*           |       2        |           2            |       2        |           4            |                     %ls |
 | size_t             |       4        |           4            |       8        |           8            |                     %zd |
 | ptr*               |       4        |           4            |       8        |           8            |                      %p |
