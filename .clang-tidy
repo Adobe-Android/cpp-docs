@@ -31,6 +31,8 @@
       value:        1
     # Enforces Google C++ Style Guide Naming Rules
     # https://google.github.io/styleguide/cppguide.html
+    # Checks for identifiers naming style mismatch.
+    # https://clang.llvm.org/extra/clang-tidy/checks/readability-identifier-naming.html
     - key:          readability-identifier-naming.MacroDefinitionCase
       value:        UPPER_CASE
     - key:          readability-identifier-naming.NamespaceCase
