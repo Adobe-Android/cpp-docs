@@ -13,4 +13,4 @@
 | 10.1          | 1000.11.45.5 (based on Clang 6 series) | 10.13.6                 |
 | 10.3          | 1001.0.46.4 (based on Clang 7 series)  | 10.14.3                 |
 | 11.3.1        | 1100.0.33.17 (based on Clang 8 series) | 10.14.4                 |
-| 11.5          | 1103.0.32.62 (based on Clang 9 series) | 10.15.2                 |
+| 11.7          | 1103.0.32.62 (based on Clang 9 series) | 10.15.2                 |
