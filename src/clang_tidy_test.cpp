@@ -3,8 +3,8 @@
 #define _USE_MATH_DEFINES
 
 #include <cmath>
-#include <iostream>
 #include <iomanip>
+#include <iostream>
 #include <numbers>
 
 // Global vars should always be const
@@ -14,37 +14,43 @@ const int kGlobalVar = 3;
 #define PI_ROUNDED 3.14
 
 namespace my_namespace {
-void Foo() { std::cout << kGlobalVar << '\n'; }
+void Foo() {
+    std::cout << kGlobalVar << '\n';
+}
 // M_PI is non-standard
-void PrintBadPi() { std::cout << std::setprecision(30) << M_PI << '\n'; }
+void PrintBadPi() {
+    std::cout << std::setprecision(30) << M_PI << '\n';
+}
 // Part of official C++20 standard
-void PrintGoodPi() { std::cout << std::setprecision(30) << std::numbers::pi_v<long double> << '\n'; }
+void PrintGoodPi() {
+    std::cout << std::setprecision(30) << std::numbers::pi_v<long double> << '\n';
+}
 }  // namespace my_namespace
 
 enum class UrlTableError {
-  kOk = 0,
-  kOutOfMemory,
-  kMalformedInput,
+    kOk = 0,
+    kOutOfMemory,
+    kMalformedInput,
 };
 
 enum UrlTableErrorLegacyEnum {
-  kOk = 0,
-  kOutOfMemory,
-  kMalformedInput,
+    kOk = 0,
+    kOutOfMemory,
+    kMalformedInput,
 };
 
 class TableInfo {
- private:
-  std::string table_name_;  // OK - underscore at end.
- public:
-  static int class_const_;
+   private:
+    std::string table_name_;  // OK - underscore at end.
+   public:
+    static int class_const_;
 };
 
 struct TableInfo2 {
- private:
-  std::string table_name;  // OK - underscore at end.
- public:
-  static int class_const;
+   private:
+    std::string table_name;  // OK - underscore at end.
+   public:
+    static int class_const;
 };
 
 typedef TableInfo Foo;
@@ -53,21 +59,21 @@ typedef TableInfo Foo;
 using Foo = TableInfo;
 
 void NumberLoop(int x, int y) {
-  int array[] = {1, 3, 5, 7, 9, 11, 13, 17, 18};
+    int array[] = {1, 3, 5, 7, 9, 11, 13, 17, 18};
 
-  // nullptr check
-  int* arr_ptr = NULL;
+    // nullptr check
+    int* arr_ptr = NULL;
 
-  for (auto x : array) {
-    std::cout << "The number is " << x << '\n';
-  }
+    for (auto x : array) {
+        std::cout << "The number is " << x << '\n';
+    }
 }
 
 int main(int argc, char const* argv[]) {
-  // Example of magic numbers
-  NumberLoop(4, 5);
-  my_namespace::Foo();
-  my_namespace::PrintBadPi();
-  my_namespace::PrintGoodPi();
-  return 0;
+    // Example of magic numbers
+    NumberLoop(4, 5);
+    my_namespace::Foo();
+    my_namespace::PrintBadPi();
+    my_namespace::PrintGoodPi();
+    return 0;
 }
