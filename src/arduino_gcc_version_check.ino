@@ -5,12 +5,12 @@
 #include <Wire.h>
 
 void setup() {
-  Wire.begin();
-  Serial.begin(9600);
+    Wire.begin();
+    Serial.begin(9600);
 }
 
 void loop() {
-  Serial.print("GCC Version ");
-  Serial.println(__VERSION__);
-  delay(5000);
+    Serial.print("GCC Version ");
+    Serial.println(__VERSION__);
+    delay(5000);
 }
