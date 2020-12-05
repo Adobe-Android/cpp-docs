@@ -65,7 +65,8 @@ void switch_benchmark() {
     }
 }
 
-void clock_time(std::chrono::steady_clock::time_point start, std::chrono::steady_clock::time_point end) {
+void clock_time(std::chrono::steady_clock::time_point start,
+                std::chrono::steady_clock::time_point end) {
     std::chrono::duration<double> elapsed_seconds = end - start;
     std::cout << "elapsed time: " << elapsed_seconds.count() << "s\n";
     std::cout << "elapsed time: "
@@ -83,6 +84,6 @@ int main(int argc, char const* argv[]) {
     if_else_benchmark();
     auto if_else_end = std::chrono::steady_clock::now();
     clock_time(if_else_start, if_else_end);
-    
+
     return 0;
 }
