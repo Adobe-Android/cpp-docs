@@ -31,3 +31,6 @@
 | 1929         | Visual Studio 2019 (version 16.10 & 16.11) |
 | 1930         | Visual Studio 2022 (version 17.0)          |
 | 1931         | Visual Studio 2022 (version 17.1)          |
+| 1932         | Visual Studio 2022 (version 17.2)          |
+| 1933         | Visual Studio 2022 (version 17.3)          |
+| 1934         | Visual Studio 2022 (version 17.4)          |
