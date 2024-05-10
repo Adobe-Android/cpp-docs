@@ -19,3 +19,5 @@
 | 13.2.1        | 1300.0.29.30  (based on Clang 12 series)  | 11.3                                                |
 | 13.4.1        | 1316.0.21.2.5 (based on Clang 13 series)  | 12.0                                                |
 | 14.2          | 1400.0.29.202 (based on Clang 14 series)  | 12.5                                                |
+| 14.3.1        | 1403.0.22.14.1 (based on Clang 15 series) | 13.0                                                |
+| 15.2          | 1500.1.0.2.5 (based on Clang 16 series)   | 13.5                                                |
