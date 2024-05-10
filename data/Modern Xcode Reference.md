@@ -17,3 +17,4 @@
 * [Xcode - Support - Apple Developer](https://developer.apple.com/support/xcode)
 * [Xcode - Wikipedia](https://en.wikipedia.org/wiki/Xcode#Toolchain_versions)
 * [Building a Universal macOS Binary | Apple Developer Documentation](https://developer.apple.com/documentation/apple-silicon/building-a-universal-macos-binary)
+* [C++ Language Support - Xcode - Apple Developer](https://developer.apple.com/xcode/cpp/)
